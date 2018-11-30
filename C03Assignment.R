@@ -52,6 +52,7 @@ function3 <- function() {
    
     # casting the final tidy data set by calculating the mean of each variable by Subject and Activity groups
     castX <- dcast(meltX, Sub_Group + Act_Group ~ variable,mean) 
+    write.csv(castX,file='Tidy_data_set.csv')
     
     # returning the final data set
     castX
