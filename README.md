@@ -14,7 +14,7 @@ The data files needed for this assignment are :
 - 'Subject_train.txt': Each row identifies the subject who performed the activity for each window sample of train data set. Its range is from 1 to 30.
 
 
-This assignment was conducted via the execution of one R script file, named 'C03Assignment.R', and one corresponding function named 'function3'. 
+This assignment was conducted via the execution of one R script file, named 'run_analysis.R', and one corresponding function named 'function3'. 
 The execution steps of function3, as well as the description of the used variables are mentioned in CodeBook.md
 
 

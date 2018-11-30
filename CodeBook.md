@@ -1,7 +1,7 @@
 # ProgrammingAssignment3
 Repo for the Getting and Cleaning Data Course Programming Assignment of Week 4
 
-This assignment was conducted via the execution of one R script file and one corresponding function named 'function3'. The execution 
+This assignment was conducted via the execution of one R script file, named 'run_analysis.R', and one corresponding function named 'function3'. The execution 
 steps of function 3, as well as the description of the used variables are mentioned below:
 
    
