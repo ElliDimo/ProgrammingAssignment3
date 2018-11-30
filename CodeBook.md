@@ -40,6 +40,6 @@ steps of function 3, as well as the description of the used variables are mentio
    
     12. Casting the final tidy data set, named 'castX', by calculating the mean of each variable by Subject and Activity groups (id elements : 'Sub_Group','Act_Group')
     
-    13. Writing the final tidy data set, 'castX', in a csv file named 'Tidy_data_set.csv'
+    13. Writing the final tidy data set, 'castX', in a txt file named 'Tidy_data_set.txt'
     
     14. Returning the final data set 'castX', as the result of function3.

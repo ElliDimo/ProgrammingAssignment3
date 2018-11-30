@@ -18,7 +18,7 @@ This assignment was conducted via the execution of one R script file, named 'C03
 The execution steps of function3, as well as the description of the used variables are mentioned in CodeBook.md
 
 
-The R script file reads all data provided in the above data files and creates the 'Tidy_data_set.csv', containing the final tidy data set. 
+The R script file reads all data provided in the above data files and creates the 'Tidy_data_set.txt', containing the final tidy data set. 
 
 The final tidy data set includes the calculated mean of all the mean and standard deviation variables/features included in the original data sets, 
 calculated by Subject (1-30) and Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
