@@ -10,7 +10,7 @@ function3 <- function() {
     subjectX_test <- read.table('subject_test.txt',header=F) # test data frame of 2947 obs. and 1 variable - subject
     subjectX_train <- read.table('subject_train.txt',header=F) # train data frame of 7352 obs. and 1 variable - subject
     
-    # giving headers to the datasets dataX - labellling the data sets with descriptive variable names
+    # giving headers to the datasets dataX
     names(dataX_test) <- as.character(names_features$V2)
     names(dataX_train) <- as.character(names_features$V2)
     
@@ -40,6 +40,15 @@ function3 <- function() {
     
     # extracting only mean and std columns, as well as Activity and Subject columns, in new data frame 
     mean_stdX<-dataX[,c(indices_mean_std,562,563)]
+    
+    # labelling the columns with descriptive variable names
+    names(mean_stdX) <- gsub("[(][)]","", names(mean_stdX))
+    names(mean_stdX) <- gsub("^t", "Time_", names(mean_stdX))
+    names(mean_stdX) <- gsub("^f", "Frequency_", names(mean_stdX))
+    names(mean_stdX) <- gsub("Acc", "Accelerometer", names(mean_stdX))
+    names(mean_stdX) <- gsub("Gyro", "Gyroscope", names(mean_stdX))
+    names(mean_stdX) <- gsub("Mag", "Magnitude", names(mean_stdX))
+    names(mean_stdX) <- gsub("-std", "_StandardDeviation", names(mean_stdX))
 
     # creating categorical variables/factor columns of Subject and Activity groups
     mean_stdX$Sub_Group <- factor(mean_stdX$Subject)

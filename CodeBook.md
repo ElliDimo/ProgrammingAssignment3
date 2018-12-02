@@ -15,7 +15,7 @@ steps of function 3, as well as the description of the used variables are mentio
     subjectX_test : test data frame of 2947 obs. and 1 variable - subject, as read from 'subject_test.txt' file
     subjectX_train : train data frame of 7352 obs. and 1 variable - subject, as read from 'subject_train.txt' file
     
-    2. Giving headers to the datasets dataX_test & dataX_train - labelling the data sets with the corresponding descriptive variable names from the names_features vector
+    2. Giving headers to the datasets dataX_test & dataX_train from the corresponding names in names_features vector
     
     3. Creating an 'Activity label' column in dataY_test & dataY_train data sets, corresponding to the activity number of each row, via the use of labels_mapping
     
@@ -32,14 +32,16 @@ steps of function 3, as well as the description of the used variables are mentio
     
     9. Extracting the mean and std columns, as well as Activity and Subject columns, and storing them in a new data frame, called 'mean_stdX'
 
-    10. Creating categorical variables/factor columns of Subject and Activity Groups, named 'Sub_Group' and 'Act_Group', in data frame 'mean_stdX'
+    10. Labelling the columns with descriptive variable names, by substition of abbreviations
+    
+    11. Creating categorical variables/factor columns of Subject and Activity Groups, named 'Sub_Group' and 'Act_Group', in data frame 'mean_stdX'
 
-    11. Melting the 'mean_stdX' data frame, by giving id and variable attributes to columns (use of reshape2 package):
+    12. Melting the 'mean_stdX' data frame, by giving id and variable attributes to columns (use of reshape2 package):
         - id elements: 'Sub_Group','Act_Group'
         - measure variables : all other variables of mean and std columns
    
-    12. Casting the final tidy data set, named 'castX', by calculating the mean of each variable by Subject and Activity groups (id elements : 'Sub_Group','Act_Group')
+    13. Casting the final tidy data set, named 'castX', by calculating the mean of each variable by Subject and Activity groups (id elements : 'Sub_Group','Act_Group')
     
-    13. Writing the final tidy data set, 'castX', in a txt file named 'Tidy_data_set.txt'
+    14. Writing the final tidy data set, 'castX', in a txt file named 'Tidy_data_set.txt'
     
-    14. Returning the final data set 'castX', as the result of function3.
+    15. Returning the final data set 'castX', as the result of function3.
